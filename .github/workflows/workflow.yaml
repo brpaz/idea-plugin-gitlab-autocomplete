@@ -16,7 +16,7 @@ jobs:
         with:
           java-version: 11
 
-      - name: Build the plugin using Gradle
+      - name: Build the plugin
         run: ./gradlew buildPlugin
 
       - name: Verify Plugin Compatilibity on IntelliJ Platforms
@@ -27,8 +27,6 @@ jobs:
             ideaIC:2019.3
             ideaIU:2019.3
             pycharmPC:2019.3
-            goland:2019.3
-            clion:2019.3
             ideaIC:LATEST-EAP-SNAPSHOT
 
       - name: Get log file path and print contents

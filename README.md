@@ -1,6 +1,6 @@
-# GitLab Variables Jetbrains Autocomplete
+# GitLab CI autocomplete plugin
 
-> Jetbrains Plugin that provides autocomplete for [Predefined CI variables](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html).
+> Jetbrains Plugin that provides autocomplete for GitLab CI [Predefined CI variables](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html).
 
 ## Demo
 
