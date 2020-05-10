@@ -1,0 +1,674 @@
+[
+  {
+    "Variable": "ARTIFACT_DOWNLOAD_ATTEMPTS",
+    "GitLab": 8.15,
+    "Runner": 1.9,
+    "Description": "Number of attempts to download artifacts running a job"
+  },
+  {
+    "Variable": "CHAT_CHANNEL",
+    "GitLab": 10.6,
+    "Runner": "all",
+    "Description": "Source chat channel which triggered the ChatOps command"
+  },
+  {
+    "Variable": "CHAT_INPUT",
+    "GitLab": 10.6,
+    "Runner": "all",
+    "Description": "Additional arguments passed in the ChatOps command"
+  },
+  {
+    "Variable": "CI",
+    "GitLab": "all",
+    "Runner": 0.4,
+    "Description": "Mark that job is executed in CI environment"
+  },
+  {
+    "Variable": "CI_API_V4_URL",
+    "GitLab": 11.7,
+    "Runner": "all",
+    "Description": "The GitLab API v4 root URL"
+  },
+  {
+    "Variable": "CI_BUILDS_DIR",
+    "GitLab": "all",
+    "Runner": 11.1,
+    "Description": "Top-level directory where builds are executed."
+  },
+  {
+    "Variable": "CI_COMMIT_BEFORE_SHA",
+    "GitLab": 11.2,
+    "Runner": "all",
+    "Description": "The previous latest commit present on a branch before a merge request. Only populated when there is a merge request associated with the pipeline."
+  },
+  {
+    "Variable": "CI_COMMIT_DESCRIPTION",
+    "GitLab": 10.8,
+    "Runner": "all",
+    "Description": "The description of the commit: the message without first line, if the title is shorter than 100 characters; full message in other case."
+  },
+  {
+    "Variable": "CI_COMMIT_MESSAGE",
+    "GitLab": 10.8,
+    "Runner": "all",
+    "Description": "The full commit message."
+  },
+  {
+    "Variable": "CI_COMMIT_REF_NAME",
+    "GitLab": 9,
+    "Runner": "all",
+    "Description": "The branch or tag name for which project is built"
+  },
+  {
+    "Variable": "CI_COMMIT_REF_PROTECTED",
+    "GitLab": 11.11,
+    "Runner": "all",
+    "Description": "true if the job is running on a protected reference, false if not"
+  },
+  {
+    "Variable": "CI_COMMIT_REF_SLUG",
+    "GitLab": 9,
+    "Runner": "all",
+    "Description": "$CI_COMMIT_REF_NAME lowercased, shortened to 63 bytes, and with everything except 0-9 and a-z replaced with -. No leading / trailing -. Use in URLs, host names and domain names."
+  },
+  {
+    "Variable": "CI_COMMIT_SHA",
+    "GitLab": 9,
+    "Runner": "all",
+    "Description": "The commit revision for which project is built"
+  },
+  {
+    "Variable": "CI_COMMIT_SHORT_SHA",
+    "GitLab": 11.7,
+    "Runner": "all",
+    "Description": "The first eight characters of CI_COMMIT_SHA"
+  },
+  {
+    "Variable": "CI_COMMIT_BRANCH",
+    "GitLab": 12.6,
+    "Runner": 0.5,
+    "Description": "The commit branch name. Present only when building branches."
+  },
+  {
+    "Variable": "CI_COMMIT_TAG",
+    "GitLab": 9,
+    "Runner": 0.5,
+    "Description": "The commit tag name. Present only when building tags."
+  },
+  {
+    "Variable": "CI_COMMIT_TITLE",
+    "GitLab": 10.8,
+    "Runner": "all",
+    "Description": "The title of the commit - the full first line of the message"
+  },
+  {
+    "Variable": "CI_CONCURRENT_ID",
+    "GitLab": "all",
+    "Runner": 11.1,
+    "Description": "Unique ID of build execution within a single executor."
+  },
+  {
+    "Variable": "CI_CONCURRENT_PROJECT_ID",
+    "GitLab": "all",
+    "Runner": 11.1,
+    "Description": "Unique ID of build execution within a single executor and project."
+  },
+  {
+    "Variable": "CI_CONFIG_PATH",
+    "GitLab": 9.4,
+    "Runner": 0.5,
+    "Description": "The path to CI config file. Defaults to .gitlab-ci.yml"
+  },
+  {
+    "Variable": "CI_DEBUG_TRACE",
+    "GitLab": "all",
+    "Runner": 1.7,
+    "Description": "Whether debug logging (tracing) is enabled"
+  },
+  {
+    "Variable": "CI_DEFAULT_BRANCH",
+    "GitLab": 12.4,
+    "Runner": "all",
+    "Description": "The name of the default branch for the project."
+  },
+  {
+    "Variable": "CI_DEPLOY_PASSWORD",
+    "GitLab": 10.8,
+    "Runner": "all",
+    "Description": "Authentication password of the GitLab Deploy Token, only present if the Project has one related."
+  },
+  {
+    "Variable": "CI_DEPLOY_USER",
+    "GitLab": 10.8,
+    "Runner": "all",
+    "Description": "Authentication username of the GitLab Deploy Token, only present if the Project has one related."
+  },
+  {
+    "Variable": "CI_DISPOSABLE_ENVIRONMENT",
+    "GitLab": "all",
+    "Runner": 10.1,
+    "Description": "Marks that the job is executed in a disposable environment (something that is created only for this job and disposed of/destroyed after the execution - all executors except shell and ssh). If the environment is disposable, it is set to true, otherwise it is not defined at all."
+  },
+  {
+    "Variable": "CI_ENVIRONMENT_NAME",
+    "GitLab": 8.15,
+    "Runner": "all",
+    "Description": "The name of the environment for this job. Only present if environment:name is set."
+  },
+  {
+    "Variable": "CI_ENVIRONMENT_SLUG",
+    "GitLab": 8.15,
+    "Runner": "all",
+    "Description": "A simplified version of the environment name, suitable for inclusion in DNS, URLs, Kubernetes labels, etc. Only present if environment:name is set."
+  },
+  {
+    "Variable": "CI_ENVIRONMENT_URL",
+    "GitLab": 9.3,
+    "Runner": "all",
+    "Description": "The URL of the environment for this job. Only present if environment:url is set."
+  },
+  {
+    "Variable": "CI_EXTERNAL_PULL_REQUEST_IID",
+    "GitLab": 12.3,
+    "Runner": "all",
+    "Description": "Pull Request ID from GitHub if the pipelines are for external pull requests. Available only if only: [external_pull_requests] or rules syntax is used and the pull request is open."
+  },
+  {
+    "Variable": "CI_EXTERNAL_PULL_REQUEST_SOURCE_BRANCH_NAME",
+    "GitLab": 12.3,
+    "Runner": "all",
+    "Description": "The source branch name of the pull request if the pipelines are for external pull requests. Available only if only: [external_pull_requests] or rules syntax is used and the pull request is open."
+  },
+  {
+    "Variable": "CI_EXTERNAL_PULL_REQUEST_SOURCE_BRANCH_SHA",
+    "GitLab": 12.3,
+    "Runner": "all",
+    "Description": "The HEAD SHA of the source branch of the pull request if the pipelines are for external pull requests. Available only if only: [external_pull_requests] or rules syntax is used and the pull request is open."
+  },
+  {
+    "Variable": "CI_EXTERNAL_PULL_REQUEST_TARGET_BRANCH_NAME",
+    "GitLab": 12.3,
+    "Runner": "all",
+    "Description": "The target branch name of the pull request if the pipelines are for external pull requests. Available only if only: [external_pull_requests] or rules syntax is used and the pull request is open."
+  },
+  {
+    "Variable": "CI_EXTERNAL_PULL_REQUEST_TARGET_BRANCH_SHA",
+    "GitLab": 12.3,
+    "Runner": "all",
+    "Description": "The HEAD SHA of the target branch of the pull request if the pipelines are for external pull requests. Available only if only: [external_pull_requests] or rules syntax is used and the pull request is open."
+  },
+  {
+    "Variable": "CI_JOB_ID",
+    "GitLab": 9,
+    "Runner": "all",
+    "Description": "The unique id of the current job that GitLab CI/CD uses internally"
+  },
+  {
+    "Variable": "CI_JOB_IMAGE",
+    "GitLab": 12.9,
+    "Runner": 12.9,
+    "Description": "The name of the image running the CI job"
+  },
+  {
+    "Variable": "CI_JOB_MANUAL",
+    "GitLab": 8.12,
+    "Runner": "all",
+    "Description": "The flag to indicate that job was manually started"
+  },
+  {
+    "Variable": "CI_JOB_NAME",
+    "GitLab": 9,
+    "Runner": 0.5,
+    "Description": "The name of the job as defined in .gitlab-ci.yml"
+  },
+  {
+    "Variable": "CI_JOB_STAGE",
+    "GitLab": 9,
+    "Runner": 0.5,
+    "Description": "The name of the stage as defined in .gitlab-ci.yml"
+  },
+  {
+    "Variable": "CI_JOB_TOKEN",
+    "GitLab": 9,
+    "Runner": 1.2,
+    "Description": "Token used for authenticating with the GitLab Container Registry and downloading dependent repositories"
+  },
+  {
+    "Variable": "CI_JOB_JWT",
+    "GitLab": 12.1,
+    "Runner": "all",
+    "Description": "RS256 JSON web token that can be used for authenticating with third party systems that support JWT authentication, for example HashiCorp’s Vault."
+  },
+  {
+    "Variable": "CI_JOB_URL",
+    "GitLab": 11.1,
+    "Runner": 0.5,
+    "Description": "Job details URL"
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_ASSIGNEES",
+    "GitLab": 11.9,
+    "Runner": "all",
+    "Description": "Comma-separated list of username(s) of assignee(s) for the merge request if the pipelines are for merge requests. Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_CHANGED_PAGE_PATHS",
+    "GitLab": 12.9,
+    "Runner": "all",
+    "Description": "Comma-separated list of paths of changed pages in a deployed Review App for a Merge Request. A Route Map must be configured."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_CHANGED_PAGE_URLS",
+    "GitLab": 12.9,
+    "Runner": "all",
+    "Description": "Comma-separated list of URLs of changed pages in a deployed Review App for a Merge Request. A Route Map must be configured."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_ID",
+    "GitLab": 11.6,
+    "Runner": "all",
+    "Description": "The ID of the merge request if the pipelines are for merge requests. Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_IID",
+    "GitLab": 11.6,
+    "Runner": "all",
+    "Description": "The IID of the merge request if the pipelines are for merge requests. Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_LABELS",
+    "GitLab": 11.9,
+    "Runner": "all",
+    "Description": "Comma-separated label names of the merge request if the pipelines are for merge requests. Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_MILESTONE",
+    "GitLab": 11.9,
+    "Runner": "all",
+    "Description": "The milestone title of the merge request if the pipelines are for merge requests. Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_PROJECT_ID",
+    "GitLab": 11.6,
+    "Runner": "all",
+    "Description": "The ID of the project of the merge request if the pipelines are for merge requests. Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_PROJECT_PATH",
+    "GitLab": 11.6,
+    "Runner": "all",
+    "Description": "The path of the project of the merge request if the pipelines are for merge requests (e.g. namespace/awesome-project). Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_PROJECT_URL",
+    "GitLab": 11.6,
+    "Runner": "all",
+    "Description": "The URL of the project of the merge request if the pipelines are for merge requests (e.g. http://192.168.10.15:3000/namespace/awesome-project). Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_REF_PATH",
+    "GitLab": 11.6,
+    "Runner": "all",
+    "Description": "The ref path of the merge request if the pipelines are for merge requests. (e.g. refs/merge-requests/1/head). Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_SOURCE_BRANCH_NAME",
+    "GitLab": 11.6,
+    "Runner": "all",
+    "Description": "The source branch name of the merge request if the pipelines are for merge requests. Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_SOURCE_BRANCH_SHA",
+    "GitLab": 11.9,
+    "Runner": "all",
+    "Description": "The HEAD SHA of the source branch of the merge request if the pipelines are for merge requests. Available only if only: [merge_requests] or rules syntax is used, the merge request is created, and the pipeline is a merged result pipeline. "
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_SOURCE_PROJECT_ID",
+    "GitLab": 11.6,
+    "Runner": "all",
+    "Description": "The ID of the source project of the merge request if the pipelines are for merge requests. Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_SOURCE_PROJECT_PATH",
+    "GitLab": 11.6,
+    "Runner": "all",
+    "Description": "The path of the source project of the merge request if the pipelines are for merge requests. Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_SOURCE_PROJECT_URL",
+    "GitLab": 11.6,
+    "Runner": "all",
+    "Description": "The URL of the source project of the merge request if the pipelines are for merge requests. Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_TARGET_BRANCH_NAME",
+    "GitLab": 11.6,
+    "Runner": "all",
+    "Description": "The target branch name of the merge request if the pipelines are for merge requests. Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_TARGET_BRANCH_SHA",
+    "GitLab": 11.9,
+    "Runner": "all",
+    "Description": "The HEAD SHA of the target branch of the merge request if the pipelines are for merge requests. Available only if only: [merge_requests] or rules syntax is used, the merge request is created, and the pipeline is a merged result pipeline. "
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_TITLE",
+    "GitLab": 11.9,
+    "Runner": "all",
+    "Description": "The title of the merge request if the pipelines are for merge requests. Available only if only: [merge_requests] or rules syntax is used and the merge request is created."
+  },
+  {
+    "Variable": "CI_MERGE_REQUEST_EVENT_TYPE",
+    "GitLab": 12.3,
+    "Runner": "all",
+    "Description": "The event type of the merge request, if the pipelines are for merge requests. Can be detached, merged_result or merge_train."
+  },
+  {
+    "Variable": "CI_NODE_INDEX",
+    "GitLab": 11.5,
+    "Runner": "all",
+    "Description": "Index of the job in the job set. If the job is not parallelized, this variable is not set."
+  },
+  {
+    "Variable": "CI_NODE_TOTAL",
+    "GitLab": 11.5,
+    "Runner": "all",
+    "Description": "Total number of instances of this job running in parallel. If the job is not parallelized, this variable is set to 1."
+  },
+  {
+    "Variable": "CI_PAGES_DOMAIN",
+    "GitLab": 11.8,
+    "Runner": "all",
+    "Description": "The configured domain that hosts GitLab Pages."
+  },
+  {
+    "Variable": "CI_PAGES_URL",
+    "GitLab": 11.8,
+    "Runner": "all",
+    "Description": "URL to GitLab Pages-built pages. Always belongs to a subdomain of CI_PAGES_DOMAIN."
+  },
+  {
+    "Variable": "CI_PIPELINE_ID",
+    "GitLab": 8.1,
+    "Runner": "all",
+    "Description": "The unique id of the current pipeline that GitLab CI/CD uses internally"
+  },
+  {
+    "Variable": "CI_PIPELINE_IID",
+    "GitLab": 11,
+    "Runner": "all",
+    "Description": "The unique id of the current pipeline scoped to project"
+  },
+  {
+    "Variable": "CI_PIPELINE_SOURCE",
+    "GitLab": 10,
+    "Runner": "all",
+    "Description": "Indicates how the pipeline was triggered. Possible options are: push, web, trigger, schedule, api, pipeline, parent_pipeline, external, chat, merge_request_event, and external_pull_request_event. For pipelines created before GitLab 9.5, this will show as unknown"
+  },
+  {
+    "Variable": "CI_PIPELINE_TRIGGERED",
+    "GitLab": "all",
+    "Runner": "all",
+    "Description": "The flag to indicate that job was triggered"
+  },
+  {
+    "Variable": "CI_PIPELINE_URL",
+    "GitLab": 11.1,
+    "Runner": 0.5,
+    "Description": "Pipeline details URL"
+  },
+  {
+    "Variable": "CI_PROJECT_DIR",
+    "GitLab": "all",
+    "Runner": "all",
+    "Description": "The full path where the repository is cloned and where the job is run. If the GitLab Runner builds_dir parameter is set, this variable is set relative to the value of builds_dir. For more information, see Advanced configuration for GitLab Runner."
+  },
+  {
+    "Variable": "CI_PROJECT_ID",
+    "GitLab": "all",
+    "Runner": "all",
+    "Description": "The unique id of the current project that GitLab CI/CD uses internally"
+  },
+  {
+    "Variable": "CI_PROJECT_NAME",
+    "GitLab": 8.1,
+    "Runner": 0.5,
+    "Description": "The name of the directory for the project that is currently being built. For example, if the project URL is gitlab.example.com/group-name/project-1, the CI_PROJECT_NAME would be project-1."
+  },
+  {
+    "Variable": "CI_PROJECT_NAMESPACE",
+    "GitLab": 8.1,
+    "Runner": 0.5,
+    "Description": "The project namespace (username or groupname) that is currently being built"
+  },
+  {
+    "Variable": "CI_PROJECT_PATH",
+    "GitLab": 8.1,
+    "Runner": 0.5,
+    "Description": "The namespace with project name"
+  },
+  {
+    "Variable": "CI_PROJECT_PATH_SLUG",
+    "GitLab": 9.3,
+    "Runner": "all",
+    "Description": "$CI_PROJECT_PATH lowercased and with everything except 0-9 and a-z replaced with -. Use in URLs and domain names."
+  },
+  {
+    "Variable": "CI_PROJECT_REPOSITORY_LANGUAGES",
+    "GitLab": 12.3,
+    "Runner": "all",
+    "Description": "Comma-separated, lowercased list of the languages used in the repository (e.g. ruby,javascript,html,css)"
+  },
+  {
+    "Variable": "CI_PROJECT_TITLE",
+    "GitLab": 12.4,
+    "Runner": "all",
+    "Description": "The human-readable project name as displayed in the GitLab web interface."
+  },
+  {
+    "Variable": "CI_PROJECT_URL",
+    "GitLab": 8.1,
+    "Runner": 0.5,
+    "Description": "The HTTP(S) address to access project"
+  },
+  {
+    "Variable": "CI_PROJECT_VISIBILITY",
+    "GitLab": 10.3,
+    "Runner": "all",
+    "Description": "The project visibility (internal, private, public)"
+  },
+  {
+    "Variable": "CI_REGISTRY",
+    "GitLab": 8.1,
+    "Runner": 0.5,
+    "Description": "If the Container Registry is enabled it returns the address of GitLab’s Container Registry. This variable will include a :port value if one has been specified in the registry configuration."
+  },
+  {
+    "Variable": "CI_REGISTRY_IMAGE",
+    "GitLab": 8.1,
+    "Runner": 0.5,
+    "Description": "If the Container Registry is enabled for the project it returns the address of the registry tied to the specific project"
+  },
+  {
+    "Variable": "CI_REGISTRY_PASSWORD",
+    "GitLab": 9,
+    "Runner": "all",
+    "Description": "The password to use to push containers to the GitLab Container Registry"
+  },
+  {
+    "Variable": "CI_REGISTRY_USER",
+    "GitLab": 9,
+    "Runner": "all",
+    "Description": "The username to use to push containers to the GitLab Container Registry"
+  },
+  {
+    "Variable": "CI_REPOSITORY_URL",
+    "GitLab": 9,
+    "Runner": "all",
+    "Description": "The URL to clone the Git repository"
+  },
+  {
+    "Variable": "CI_RUNNER_DESCRIPTION",
+    "GitLab": 8.1,
+    "Runner": 0.5,
+    "Description": "The description of the runner as saved in GitLab"
+  },
+  {
+    "Variable": "CI_RUNNER_EXECUTABLE_ARCH",
+    "GitLab": "all",
+    "Runner": 10.6,
+    "Description": "The OS/architecture of the GitLab Runner executable (note that this is not necessarily the same as the environment of the executor)"
+  },
+  {
+    "Variable": "CI_RUNNER_ID",
+    "GitLab": 8.1,
+    "Runner": 0.5,
+    "Description": "The unique id of runner being used"
+  },
+  {
+    "Variable": "CI_RUNNER_REVISION",
+    "GitLab": "all",
+    "Runner": 10.6,
+    "Description": "GitLab Runner revision that is executing the current job"
+  },
+  {
+    "Variable": "CI_RUNNER_SHORT_TOKEN",
+    "GitLab": "all",
+    "Runner": 12.3,
+    "Description": "First eight characters of GitLab Runner’s token used to authenticate new job requests. Used as Runner’s unique ID"
+  },
+  {
+    "Variable": "CI_RUNNER_TAGS",
+    "GitLab": 8.1,
+    "Runner": 0.5,
+    "Description": "The defined runner tags"
+  },
+  {
+    "Variable": "CI_RUNNER_VERSION",
+    "GitLab": "all",
+    "Runner": 10.6,
+    "Description": "GitLab Runner version that is executing the current job"
+  },
+  {
+    "Variable": "CI_SERVER",
+    "GitLab": "all",
+    "Runner": "all",
+    "Description": "Mark that job is executed in CI environment"
+  },
+  {
+    "Variable": "CI_SERVER_URL",
+    "GitLab": 12.7,
+    "Runner": "all",
+    "Description": "The base URL of the GitLab instance, including protocol and port (like https://gitlab.example.com:8080)"
+  },
+  {
+    "Variable": "CI_SERVER_HOST",
+    "GitLab": 12.1,
+    "Runner": "all",
+    "Description": "Host component of the GitLab instance URL, without protocol and port (like gitlab.example.com)"
+  },
+  {
+    "Variable": "CI_SERVER_PORT",
+    "GitLab": 12.8,
+    "Runner": "all",
+    "Description": "Port component of the GitLab instance URL, without host and protocol (like 3000)"
+  },
+  {
+    "Variable": "CI_SERVER_PROTOCOL",
+    "GitLab": 12.8,
+    "Runner": "all",
+    "Description": "Protocol component of the GitLab instance URL, without host and port (like https)"
+  },
+  {
+    "Variable": "CI_SERVER_NAME",
+    "GitLab": "all",
+    "Runner": "all",
+    "Description": "The name of CI server that is used to coordinate jobs"
+  },
+  {
+    "Variable": "CI_SERVER_REVISION",
+    "GitLab": "all",
+    "Runner": "all",
+    "Description": "GitLab revision that is used to schedule jobs"
+  },
+  {
+    "Variable": "CI_SERVER_VERSION",
+    "GitLab": "all",
+    "Runner": "all",
+    "Description": "GitLab version that is used to schedule jobs"
+  },
+  {
+    "Variable": "CI_SERVER_VERSION_MAJOR",
+    "GitLab": 11.4,
+    "Runner": "all",
+    "Description": "GitLab version major component"
+  },
+  {
+    "Variable": "CI_SERVER_VERSION_MINOR",
+    "GitLab": 11.4,
+    "Runner": "all",
+    "Description": "GitLab version minor component"
+  },
+  {
+    "Variable": "CI_SERVER_VERSION_PATCH",
+    "GitLab": 11.4,
+    "Runner": "all",
+    "Description": "GitLab version patch component"
+  },
+  {
+    "Variable": "CI_SHARED_ENVIRONMENT",
+    "GitLab": "all",
+    "Runner": 10.1,
+    "Description": "Marks that the job is executed in a shared environment (something that is persisted across CI invocations like shell or ssh executor). If the environment is shared, it is set to true, otherwise it is not defined at all."
+  },
+  {
+    "Variable": "GET_SOURCES_ATTEMPTS",
+    "GitLab": 8.15,
+    "Runner": 1.9,
+    "Description": "Number of attempts to fetch sources running a job"
+  },
+  {
+    "Variable": "GITLAB_CI",
+    "GitLab": "all",
+    "Runner": "all",
+    "Description": "Mark that job is executed in GitLab CI/CD environment"
+  },
+  {
+    "Variable": "GITLAB_FEATURES",
+    "GitLab": 10.6,
+    "Runner": "all",
+    "Description": "The comma separated list of licensed features available for your instance and plan"
+  },
+  {
+    "Variable": "GITLAB_USER_EMAIL",
+    "GitLab": 8.12,
+    "Runner": "all",
+    "Description": "The email of the user who started the job"
+  },
+  {
+    "Variable": "GITLAB_USER_ID",
+    "GitLab": 8.12,
+    "Runner": "all",
+    "Description": "The id of the user who started the job"
+  },
+  {
+    "Variable": "GITLAB_USER_LOGIN",
+    "GitLab": 10,
+    "Runner": "all",
+    "Description": "The login username of the user who started the job"
+  },
+  {
+    "Variable": "GITLAB_USER_NAME",
+    "GitLab": 10,
+    "Runner": "all",
+    "Description": "The real name of the user who started the job"
+  },
+  {
+    "Variable": "RESTORE_CACHE_ATTEMPTS",
+    "GitLab": 8.15,
+    "Runner": 1.9,
+    "Description": "Number of attempts to restore the cache running a job"
+  }
+]

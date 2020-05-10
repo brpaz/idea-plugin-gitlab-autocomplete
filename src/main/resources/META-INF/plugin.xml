@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>dev.brunopaz.gitlab-autocomplete-plugin</id>
+    <name>GitLab Autocomplete</name>
+    <vendor email="oss@brunopaz.dev" url="https://brunopaz.dev">Bruno Paz</vendor>
+
+    <description><![CDATA[
+    This plugin provides autocomplete for GitLab CI predefined variables.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.plugins.yaml</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <completion.contributor language="yaml"
+                                implementationClass="dev.brunopaz.gitlabcompletion.GitLabCompletionContributor"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
